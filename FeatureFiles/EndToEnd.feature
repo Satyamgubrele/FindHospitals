@@ -30,7 +30,7 @@ Feature: EndToEnd
   Scenario: Store all the surgery
     When User navigates to practo home page
     And user clciks on the surgery option
-    Then Validate the title of the surgery page as "Practo Care Surgeries | End to end care from top surgeons in your city
+    Then Validate the title of the surgery page as "Practo Care Surgeries | End to end care from top surgeons in your city"
     Then count and store all the surgeries
     
   Scenario Outline: Health and Wellness form

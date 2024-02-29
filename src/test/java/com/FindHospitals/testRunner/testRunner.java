@@ -8,12 +8,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features= {".//FeatureFiles/EndToEnd.feature"}, 
+		features= {".//FeatureFiles/smoke.feature"}, 
 		glue = "com.FindHospital.stepDefinitions", 
 		plugin = {"pretty","html:reports/report.html",
 				  "rerun:target/rerun.txt",
 				  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-		dryRun=false,
+		dryRun=true,
 		monochrome=true,
 		publish=true
 		

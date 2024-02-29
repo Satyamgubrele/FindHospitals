@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="20" passed="17" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T13:55:25 IST" name="Default suite" finished-at="2024-02-29T13:55:26 IST" duration-ms="1847">
+  <suite started-at="2024-02-29T17:01:30 IST" name="Default suite" finished-at="2024-02-29T17:09:11 IST" duration-ms="460625">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-29T13:55:25 IST" name="Default test" finished-at="2024-02-29T13:55:26 IST" duration-ms="1847">
+    <test started-at="2024-02-29T17:01:30 IST" name="Default test" finished-at="2024-02-29T17:09:11 IST" duration-ms="460625">
       <class name="com.FindHospitals.testRunner.testNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:25 IST" name="setUpClass" finished-at="2024-02-29T13:55:26 IST" duration-ms="1023" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:01:30 IST" name="setUpClass" finished-at="2024-02-29T17:01:32 IST" duration-ms="1405" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2fe88a09]]>
+                <![CDATA[org.testng.TestRunner@26e437dd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T13:55:26 IST" duration-ms="572" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:01:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:02:37 IST" duration-ms="65046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,21 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null
-at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T13:55:26 IST" duration-ms="82" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:02:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:03:11 IST" duration-ms="34264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,21 +50,10 @@ at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null
-at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T13:55:26 IST" duration-ms="38" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:03:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:03:38 IST" duration-ms="27229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,21 +66,426 @@ at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null
-at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="tearDownClass" finished-at="2024-02-29T13:55:26 IST" duration-ms="72" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:03:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:03:47 IST" duration-ms="9362" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["gender and experience filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["regresssion"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [886b0f6b1516d661869b35eca7eb5458, isElementDisplayed {id=2BC83732B99EE77ADE9CD26BA3D2E147_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58357/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (886b0f6b1516d661869b35eca7eb5458)] -> xpath: //*[@data-qa-id='omni-suggestion-main']]
+Session ID: 886b0f6b1516d661869b35eca7eb5458]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [886b0f6b1516d661869b35eca7eb5458, isElementDisplayed {id=2BC83732B99EE77ADE9CD26BA3D2E147_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58357/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (886b0f6b1516d661869b35eca7eb5458)] -> xpath: //*[@data-qa-id='omni-suggestion-main']]
+Session ID: 886b0f6b1516d661869b35eca7eb5458
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at com.FindHospitals.pageObjects.PractoHomePage.selectSpeciality(PractoHomePage.java:95)
+at com.FindHospitals.stepDefinitions.Definition.select_the_from_the_dropdown(Definition.java:65)
+at ✽.select the "Dentist" from the dropdown(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/regression.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:03:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:04:09 IST" duration-ms="21912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply sort filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["regresssion"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:04:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:04:31 IST" duration-ms="21642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply gender filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["regresssion"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:04:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:04:40 IST" duration-ms="9104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open practo application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:04:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:04:50 IST" duration-ms="9576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["select location"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:04:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:05:10 IST" duration-ms="20613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["select doctor specialization"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:05:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:05:19 IST" duration-ms="9108" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply gender filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83be0c330327adf75cc1ebc7d4c9caca, isElementDisplayed {id=40AF723303DA48E3C2C2B645A89101EB_element_27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58746/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83be0c330327adf75cc1ebc7d4c9caca)] -> xpath: //*[@data-qa-id='omni-suggestion-main']]
+Session ID: 83be0c330327adf75cc1ebc7d4c9caca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83be0c330327adf75cc1ebc7d4c9caca, isElementDisplayed {id=40AF723303DA48E3C2C2B645A89101EB_element_27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58746/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83be0c330327adf75cc1ebc7d4c9caca)] -> xpath: //*[@data-qa-id='omni-suggestion-main']]
+Session ID: 83be0c330327adf75cc1ebc7d4c9caca
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at com.FindHospitals.pageObjects.PractoHomePage.chooseLocation(PractoHomePage.java:58)
+at com.FindHospitals.stepDefinitions.Definition.select_the_location_from_the_options(Definition.java:48)
+at ✽.select the location from the options "bangalore"(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/smoke.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:05:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:05:46 IST" duration-ms="26158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply experince filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:05:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:06:10 IST" duration-ms="24849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply sort filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:06:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:06:20 IST" duration-ms="9316" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply patient story filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4a4eaf5d59664afb5401f49c7c9d3af, isElementDisplayed {id=871F1F6B90F7E128590C76C1833F2674_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4a4eaf5d59664afb5401f49c7c9d3af)] -> xpath: //*[@data-qa-id='omni-suggestion-main']]
+Session ID: e4a4eaf5d59664afb5401f49c7c9d3af]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4a4eaf5d59664afb5401f49c7c9d3af, isElementDisplayed {id=871F1F6B90F7E128590C76C1833F2674_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4a4eaf5d59664afb5401f49c7c9d3af)] -> xpath: //*[@data-qa-id='omni-suggestion-main']]
+Session ID: e4a4eaf5d59664afb5401f49c7c9d3af
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at com.FindHospitals.pageObjects.PractoHomePage.selectSpeciality(PractoHomePage.java:95)
+at com.FindHospitals.stepDefinitions.Definition.select_the_from_the_dropdown(Definition.java:65)
+at ✽.select the "dentist" from the dropdown(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/smoke.feature:85)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:06:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:06:46 IST" duration-ms="26682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply cost filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:06:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:07:13 IST" duration-ms="26642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply availability filter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:07:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:07:25 IST" duration-ms="12355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["click on surgery"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:07:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:07:49 IST" duration-ms="23617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["count and store the popular surgery options"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:07:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:08:04 IST" duration-ms="15373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open health and wellness plans"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:08:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:08:24 IST" duration-ms="19778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["fill heath&wellness form with invalid format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:08:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T17:09:09 IST" duration-ms="45049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Capture the thank you message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["smoke"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T17:09:09 IST" name="tearDownClass" finished-at="2024-02-29T17:09:11 IST" duration-ms="1459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

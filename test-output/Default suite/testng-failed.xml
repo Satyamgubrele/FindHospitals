@@ -6,7 +6,7 @@
       <class name="com.FindHospitals.testRunner.testNGRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="runScenario" invocation-numbers="3 9 12"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.FindHospitals.testRunner.testNGRunner -->

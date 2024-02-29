@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 29 13:55:25 IST 2024</td>
+<td>Started on:</td><td>Thu Feb 29 17:01:30 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1847 ms)</td>
+<tr><td>Total time:</td><td>460 seconds (460625 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,40 +75,301 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Health and Wellness form", "EndToEnd"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because the return value of &quot;com.FindHospitals.utils.baseClass.getProperties()&quot; is null
-	at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-	at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-</pre></div><a href='#' onClick='toggleBox("stack-trace359806817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace359806817'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because the return value of &quot;com.FindHospitals.utils.baseClass.getProperties()&quot; is null
-	at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-	at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply gender filter", "smoke"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83be0c330327adf75cc1ebc7d4c9caca, isElementDisplayed {id=40AF723303DA48E3C2C2B645A89101EB_element_27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58746/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83be0c330327adf75cc1ebc7d4c9caca)] -&gt; xpath: //*[@data-qa-id=&apos;omni-suggestion-main&apos;]]
+Session ID: 83be0c330327adf75cc1ebc7d4c9caca
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.FindHospitals.pageObjects.PractoHomePage.chooseLocation(PractoHomePage.java:58)
+	at com.FindHospitals.stepDefinitions.Definition.select_the_location_from_the_options(Definition.java:48)
+	at ✽.select the location from the options &quot;bangalore&quot;(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/smoke.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648285165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648285165'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83be0c330327adf75cc1ebc7d4c9caca, isElementDisplayed {id=40AF723303DA48E3C2C2B645A89101EB_element_27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58746/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83be0c330327adf75cc1ebc7d4c9caca)] -&gt; xpath: //*[@data-qa-id=&apos;omni-suggestion-main&apos;]]
+Session ID: 83be0c330327adf75cc1ebc7d4c9caca
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.FindHospitals.pageObjects.PractoHomePage.chooseLocation(PractoHomePage.java:58)
+	at com.FindHospitals.stepDefinitions.Definition.select_the_location_from_the_options(Definition.java:48)
+	at ✽.select the location from the options &quot;bangalore&quot;(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/smoke.feature:37)
 </pre></div></td>
-<td>0</td>
+<td>9</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "gender and experience filter", "regresssion"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [886b0f6b1516d661869b35eca7eb5458, isElementDisplayed {id=2BC83732B99EE77ADE9CD26BA3D2E147_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58357/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (886b0f6b1516d661869b35eca7eb5458)] -&gt; xpath: //*[@data-qa-id=&apos;omni-suggestion-main&apos;]]
+Session ID: 886b0f6b1516d661869b35eca7eb5458
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.FindHospitals.pageObjects.PractoHomePage.selectSpeciality(PractoHomePage.java:95)
+	at com.FindHospitals.stepDefinitions.Definition.select_the_from_the_dropdown(Definition.java:65)
+	at ✽.select the &quot;Dentist&quot; from the dropdown(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/regression.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1337710988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337710988'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [886b0f6b1516d661869b35eca7eb5458, isElementDisplayed {id=2BC83732B99EE77ADE9CD26BA3D2E147_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58357/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (886b0f6b1516d661869b35eca7eb5458)] -&gt; xpath: //*[@data-qa-id=&apos;omni-suggestion-main&apos;]]
+Session ID: 886b0f6b1516d661869b35eca7eb5458
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.FindHospitals.pageObjects.PractoHomePage.selectSpeciality(PractoHomePage.java:95)
+	at com.FindHospitals.stepDefinitions.Definition.select_the_from_the_dropdown(Definition.java:65)
+	at ✽.select the &quot;Dentist&quot; from the dropdown(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/regression.feature:10)
+</pre></div></td>
+<td>9</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply patient story filter", "smoke"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4a4eaf5d59664afb5401f49c7c9d3af, isElementDisplayed {id=871F1F6B90F7E128590C76C1833F2674_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4a4eaf5d59664afb5401f49c7c9d3af)] -&gt; xpath: //*[@data-qa-id=&apos;omni-suggestion-main&apos;]]
+Session ID: e4a4eaf5d59664afb5401f49c7c9d3af
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.FindHospitals.pageObjects.PractoHomePage.selectSpeciality(PractoHomePage.java:95)
+	at com.FindHospitals.stepDefinitions.Definition.select_the_from_the_dropdown(Definition.java:65)
+	at ✽.select the &quot;dentist&quot; from the dropdown(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/smoke.feature:85)
+</pre></div><a href='#' onClick='toggleBox("stack-trace964662898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace964662898'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4a4eaf5d59664afb5401f49c7c9d3af, isElementDisplayed {id=871F1F6B90F7E128590C76C1833F2674_element_47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58965/devtoo..., se:cdpVersion: 117.0.5938.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4a4eaf5d59664afb5401f49c7c9d3af)] -&gt; xpath: //*[@data-qa-id=&apos;omni-suggestion-main&apos;]]
+Session ID: e4a4eaf5d59664afb5401f49c7c9d3af
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.FindHospitals.pageObjects.PractoHomePage.selectSpeciality(PractoHomePage.java:95)
+	at com.FindHospitals.stepDefinitions.Definition.select_the_from_the_dropdown(Definition.java:65)
+	at ✽.select the &quot;dentist&quot; from the dropdown(file:///C:/Users/2304041/eclipse-workspace/FinalProjectHack/./FeatureFiles/smoke.feature:85)
+</pre></div></td>
+<td>9</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply experince filter", "smoke"</td>
+<td></td>
+<td>26</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Health and Wellness form", "EndToEnd"</td>
+<td></td>
+<td>27</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "fill heath&wellness form with invalid format", "smoke"</td>
+<td></td>
+<td>19</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on surgery", "smoke"</td>
+<td></td>
+<td>12</td>
 <td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
 <tr>
 <td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Selecting Doctors", "EndToEnd"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because the return value of &quot;com.FindHospitals.utils.baseClass.getProperties()&quot; is null
-	at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-	at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1161382705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1161382705'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because the return value of &quot;com.FindHospitals.utils.baseClass.getProperties()&quot; is null
-	at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-	at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>65</td>
 <td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
 <tr>
 <td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Store all the surgery", "EndToEnd"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because the return value of &quot;com.FindHospitals.utils.baseClass.getProperties()&quot; is null
-	at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-	at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1402333753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1402333753'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because the return value of &quot;com.FindHospitals.utils.baseClass.getProperties()&quot; is null
-	at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
-	at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>34</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply gender filter", "regresssion"</td>
+<td></td>
+<td>21</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select location", "smoke"</td>
+<td></td>
+<td>9</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply availability filter", "smoke"</td>
+<td></td>
+<td>26</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open health and wellness plans", "smoke"</td>
+<td></td>
+<td>15</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply cost filter", "smoke"</td>
+<td></td>
+<td>26</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Capture the thank you message", "smoke"</td>
+<td></td>
+<td>45</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select doctor specialization", "smoke"</td>
+<td></td>
+<td>20</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "count and store the popular surgery options", "smoke"</td>
+<td></td>
+<td>23</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open practo application", "smoke"</td>
+<td></td>
+<td>9</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply sort filter", "regresssion"</td>
+<td></td>
+<td>21</td>
+<td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
+<tr>
+<td title='com.FindHospitals.testRunner.testNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.FindHospitals.testRunner.testNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Apply sort filter", "smoke"</td>
+<td></td>
+<td>24</td>
 <td>com.FindHospitals.testRunner.testNGRunner@48f2bd5b</td></tr>
 </table><p>
 </body>
