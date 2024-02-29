@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-29T13:55:25 IST" name="Default suite" finished-at="2024-02-29T13:55:26 IST" duration-ms="1847">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-02-29T13:55:25 IST" name="Default test" finished-at="2024-02-29T13:55:26 IST" duration-ms="1847">
+      <class name="com.FindHospitals.testRunner.testNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:25 IST" name="setUpClass" finished-at="2024-02-29T13:55:26 IST" duration-ms="1023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fe88a09]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T13:55:26 IST" duration-ms="572" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Selecting Doctors"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["EndToEnd"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null
+at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
+at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T13:55:26 IST" duration-ms="82" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Store all the surgery"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["EndToEnd"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null
+at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
+at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-29T13:55:26 IST" duration-ms="38" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Health and Wellness form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["EndToEnd"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because the return value of "com.FindHospitals.utils.baseClass.getProperties()" is null
+at com.FindHospitals.utils.baseClass.initializeBrowse(baseClass.java:25)
+at com.FindHospitals.stepDefinitions.hooks.setup(hooks.java:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.FindHospitals.testRunner.testNGRunner@48f2bd5b]" started-at="2024-02-29T13:55:26 IST" name="tearDownClass" finished-at="2024-02-29T13:55:26 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.FindHospitals.testRunner.testNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
